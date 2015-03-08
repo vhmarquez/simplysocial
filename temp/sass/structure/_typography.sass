@@ -1,0 +1,49 @@
+// //////////////////////////////////////////////
+// TYPOGRAPHY
+// //////////////////////////////////////////////
+
+// -- Site typography
+
+// font family
+// //////////////////////////////////////////////
+
+@font-face
+	font-family: 'proximanova'
+	src: url('../../assets/fonts/proxima-nova/ProximaNovaCond-Regular-webfont.eot')
+	src: url('../../assets/fonts/proxima-nova/ProximaNovaCond-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../assets/fonts/proxima-nova/ProximaNovaCond-Regular-webfont.woff2') format('woff2'), url('../../assets/fonts/proxima-nova/ProximaNovaCond-Regular-webfont.woff') format('woff'), url('../../assets/fonts/proxima-nova/ProximaNovaCond-Regular-webfont.ttf') format('truetype'), url('../../assets/fonts/proxima-nova/ProximaNovaCond-Regular-webfont.svg#proximanova') format('svg')
+	font-weight: normal
+	font-style: normal
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+=proxima-nova
+	font-family: 'proximanova', sans-serif
+
+=open-sans
+	font-family: 'Open Sans', sans-serif
+
+// headings
+// //////////////////////////////////////////////
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	margin-top: 0
+	margin-bottom: 12px
+
+h3
+	+font(16px, 18px)
+	color: #34495e
+
+// paragraphs
+// //////////////////////////////////////////////
+
+p
+	margin: 0 0 12px 0
+	+font(15px, 25px)
+	color: #95a5a6
