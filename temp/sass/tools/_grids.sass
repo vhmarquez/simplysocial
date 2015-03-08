@@ -5,20 +5,23 @@
 // -- With column padding
 
 =grid
-	@extend %cf
+	+cf
 	width: 100%
-	margin-left: -$bsu
+
+	+mq(desk)
+		margin-left: -$bsu
 
 =grid-item
-	position: relative
 	width: 100% // default grid items to be own segements in mobile
-	padding-left: $bsu
 	float: left
+
+	+mq(desk)
+		padding-left: $bsu
 
 // -- Without column padding (full grid)
 
 =grid-full
-	@extend %cf
+	+cf
 	margin-left: 0!important
 	width: 100%
 

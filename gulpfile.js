@@ -7,7 +7,9 @@ var	gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	compass = require('gulp-compass'),
 	minifyCSS = require('gulp-minify-css'),
-	uglify = require('gulp-uglify');
+	uglify = require('gulp-uglify'),
+	imagemin = require('gulp-imagemin'),
+	pngquant = require('imagemin-pngquant');
 
 // Default gulp tasks
 gulp.task('default', function() {
@@ -43,8 +45,20 @@ gulp.task('minify-css', function(){
 		.pipe(gulp.dest('architecture/css'));
 });
 
+// Image Minifier
+gulp.task('imagemin', function(){
+	gulp.src('temp/img/**/*')
+		.pipe(imagemin({
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}],
+			use: [pngquant()]
+		}))
+		.pipe(gulp.dest('assets/img'));
+});
+
 // Watch Task
 gulp.task('watch', function(){
 	gulp.watch('temp/sass/**/*.sass', ['compass'])
-	gulp.watch('temp/js/**/*.js', ['compress']);
+	gulp.watch('temp/js/**/*.js', ['compress'])
+	gulp.watch('temp/img/**/*', ['imagemin']);
 });
