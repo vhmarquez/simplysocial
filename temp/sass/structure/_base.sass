@@ -44,6 +44,33 @@ body
 .padded-end
 	padding: $bsu 0
 
+// vertical alignment
+// //////////////////////////////////////////////
+
+.va-wrap
+	position: relative
+	display: table
+	width: 100%
+	height: 100%
+
+	&.hero
+		height: 425px
+
+.va-item
+	position: relative
+	display: table-cell
+	height: 100%
+	width: 100%
+
+	&.top
+		vertical-align: top
+
+	&.middle
+		vertical-align: middle
+
+	&.bottom
+		vertical-align: bottom
+
 
 // -- Hierarchy of structural classes
 // //////////////////////////////////////////////

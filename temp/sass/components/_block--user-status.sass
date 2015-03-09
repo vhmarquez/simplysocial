@@ -1,0 +1,36 @@
+// //////////////////////////////////////////////
+// BLOCK - USER STATUS
+// //////////////////////////////////////////////
+
+.block.user-status
+	background: rgba(#00b286, .7)
+	border: 0
+
+.status
+	position: relative
+	display: block
+	width: 100%
+	border: 0
+	+open-sans
+	font-weight: 300
+	+font(30px, 18px)
+	color: rgba(#fff, .5)
+	background: transparent
+
+	&::-webkit-input-placeholder
+		padding-top: 12px
+		color: rgba(#fff, .5)
+		+font(30px, 18px)
+
+	&:-moz-placeholder
+		color: rgba(#fff, .5)
+
+	&::-moz-placeholder
+		color: rgba(#fff, .5)
+
+	&:-ms-input-placeholder
+		color: rgba(#fff, .5)
+
+
+	&:focus
+		color: rgba(#fff, 1)
