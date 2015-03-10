@@ -1,5 +1,14 @@
 # Simply Social
 
+### Tech Used
+
+- HTML5
+- CSS3
+- SASS (Compass)
+- JS (jQuery)
+- Masonry
+- Gulp
+
 ### Instructions
 
 #### View Site
