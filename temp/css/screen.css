@@ -158,22 +158,6 @@ input[type="password"]:last-child {
   max-width: 360px;
 }
 
-.search {
-  height: 30px !important;
-  width: 100%;
-  max-width: 200px;
-  position: relative;
-  display: inline-block;
-  margin-right: 15px;
-  padding: 3px 36px 3px 3px;
-  background: transparent;
-  border: 1px solid #44474b;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  color: #fff;
-}
-
 .change-avatar {
   position: relative;
   display: block;
@@ -687,13 +671,24 @@ body {
   position: relative;
   display: block;
   float: right;
-  width: 315px;
+  width: 95px;
   padding: 15px 0;
+}
+@media screen and (min-width: 1226px) {
+  .top-actions {
+    width: 315px;
+  }
 }
 .top-actions .icon-search {
   position: absolute;
+  display: none;
   right: 66px;
   top: 17px;
+}
+@media screen and (min-width: 1226px) {
+  .top-actions .icon-search {
+    display: inline-block;
+  }
 }
 .top-actions .icon-new-message {
   margin-right: 10px;
@@ -717,6 +712,27 @@ body {
   border-right: 5px solid transparent;
   border-bottom: 0;
   content: "";
+}
+
+.search {
+  position: relative;
+  display: none !important;
+  height: 30px !important;
+  width: 100%;
+  max-width: 200px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  margin-right: 15px;
+  padding: 3px 36px 3px 3px;
+  border: 1px solid #44474b;
+  background: transparent;
+  color: #fff;
+}
+@media screen and (min-width: 1226px) {
+  .search {
+    display: inline-block !important;
+  }
 }
 
 .block.user-status {
