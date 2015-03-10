@@ -17,7 +17,7 @@
 // photo and video
 // //////////////////////////////////////////////
 
-span[class*="icon-"]
+[class*="icon-"]
 	position: relative
 	display: inline-block
 	margin-right: 9px
@@ -28,6 +28,12 @@ span[class*="icon-"]
 
 	&.last
 		margin-right: 0
+
+label[class*="icon-"]
+	position: absolute
+	top: 8px
+	left: 8px
+	text-indent: -9999px
 
 // photo
 // //////////////////////////////////////////////
@@ -90,3 +96,27 @@ span[class*="icon-"]
 
 	&.active
 		+sprite(48px, 48px, -3.25, -1.25)
+
+.icon-search
+	+sprite(48px, 48px, -7.25, -0.25)
+
+	+hover
+		+sprite(48px, 48px, -7.25, -1.25)
+
+	&.active
+		+sprite(48px, 48px, -7.25, -1.25)
+
+.icon-new-message
+	width: 31px !important
+	height: 26px !important
+	+sprite(48px, 48px, -8.25, -0.25)
+	background-position: -392px -11px
+	margin-right: 0
+
+	+hover
+		+sprite(48px, 48px, -8.25, -1.25)
+		background-position: -392px -59px
+
+	&.active
+		+sprite(48px, 48px, -8.25, -1.25)
+		background-position: -392px -59px

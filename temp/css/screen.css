@@ -56,6 +56,13 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 25px;
+  font-weight: 400;
+  color: #303d4f;
+}
+
+.section-title {
+  color: #b3b6bd;
+  text-transform: uppercase;
 }
 
 p {
@@ -81,6 +88,7 @@ a:hover, a:focus {
   position: relative;
   display: inline-block;
   padding: 5px;
+  text-align: right;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
@@ -92,6 +100,217 @@ a:hover, a:focus {
 }
 .status-add:hover, .status-add:focus {
   color: white;
+}
+
+.submit {
+  position: relative;
+  display: inline-block;
+  border: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  background: #00cc99;
+  padding: 10px 15px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.submit:hover, .submit:focus {
+  background: #00b286;
+}
+
+.field-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+  vertical-align: top;
+  height: 40px;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 3px;
+  background: transparent;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+input[type="text"]:last-child,
+input[type="password"]:last-child {
+  margin-bottom: 0;
+}
+
+.panel-content input[type="text"],
+.panel-content input[type="password"] {
+  padding: 3px 3px 3px 36px;
+  border: 1px solid #bec3cc;
+  color: #70767f;
+  margin-bottom: 15px;
+  max-width: 360px;
+}
+
+.search {
+  height: 30px !important;
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+  padding: 3px 36px 3px 3px;
+  background: transparent;
+  border: 1px solid #44474b;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.change-avatar {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  color: #bec3cc;
+  border: 1px solid #bec3cc;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.switch-wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.switch {
+  position: relative;
+  z-index: 3;
+  left: 11px;
+  height: 28px;
+  width: 60px;
+  padding: 0;
+  margin: 1px 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  cursor: pointer;
+}
+.switch:hover, .switch:focus {
+  right: 49px;
+}
+
+input.switch:checked + .switch-status {
+  left: 41px;
+}
+
+.switch-toggle {
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 30px;
+  margin: 0 10px;
+  -moz-border-radius: 50em;
+  -webkit-border-radius: 50em;
+  border-radius: 50em;
+  background: #00b286;
+  z-index: 1;
+}
+
+.switch-status {
+  position: absolute;
+  display: block;
+  height: 28px;
+  width: 28px;
+  -moz-border-radius: 50em;
+  -webkit-border-radius: 50em;
+  border-radius: 50em;
+  background: #fff;
+  z-index: 2;
+  left: 11px;
+  top: 1px;
+}
+
+.switch-label {
+  position: relative;
+  vertical-align: top;
+  top: 3px;
+  margin-left: 20px;
+  color: #70767f;
+}
+
+.radio-wrap {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.radio {
+  position: relative;
+  z-index: 3;
+  left: 11px;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  margin: 1px 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  cursor: pointer;
+}
+.radio:hover, .radio:focus {
+  right: 49px;
+}
+
+input.radio:checked + .radio-status {
+  display: block;
+}
+
+.radio-toggle {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  -moz-border-radius: 50em;
+  -webkit-border-radius: 50em;
+  border-radius: 50em;
+  background: #fff;
+  border: 1px solid #dee1e5;
+  z-index: 1;
+}
+
+.radio-status {
+  position: absolute;
+  display: none;
+  height: 22px;
+  width: 22px;
+  -moz-border-radius: 50em;
+  -webkit-border-radius: 50em;
+  border-radius: 50em;
+  background: #00b286;
+  z-index: 2;
+  left: 14px;
+  top: 4px;
+}
+
+.radio-label {
+  position: relative;
+  vertical-align: top;
+  top: 3px;
+  margin-left: 30px;
+  color: #70767f;
 }
 
 .group-icons {
@@ -110,7 +329,7 @@ a:hover, a:focus {
   clear: both;
 }
 
-span[class*="icon-"] {
+[class*="icon-"] {
   position: relative;
   display: inline-block;
   margin-right: 9px;
@@ -119,8 +338,15 @@ span[class*="icon-"] {
   background-image: url("../../assets/img/icons/sprite-icons.png");
   cursor: pointer;
 }
-span[class*="icon-"].last {
+[class*="icon-"].last {
   margin-right: 0;
+}
+
+label[class*="icon-"] {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  text-indent: -9999px;
 }
 
 .icon-photo {
@@ -197,6 +423,38 @@ span[class*="icon-"].last {
 .icon-grid.active {
   background-position: -156px -60px;
   background-repeat: no-repeat;
+}
+
+.icon-search {
+  background-position: -348px -12px;
+  background-repeat: no-repeat;
+}
+.icon-search:hover, .icon-search:focus {
+  background-position: -348px -60px;
+  background-repeat: no-repeat;
+}
+.icon-search.active {
+  background-position: -348px -60px;
+  background-repeat: no-repeat;
+}
+
+.icon-new-message {
+  width: 31px !important;
+  height: 26px !important;
+  background-position: -396px -12px;
+  background-repeat: no-repeat;
+  background-position: -392px -11px;
+  margin-right: 0;
+}
+.icon-new-message:hover, .icon-new-message:focus {
+  background-position: -396px -60px;
+  background-repeat: no-repeat;
+  background-position: -392px -59px;
+}
+.icon-new-message.active {
+  background-position: -396px -60px;
+  background-repeat: no-repeat;
+  background-position: -392px -59px;
 }
 
 * {
@@ -354,6 +612,15 @@ body {
 .block p:last-child {
   margin-bottom: 0 !important;
 }
+.block.bottom-border {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #dee1e5;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
 
 .block-padding {
   position: relative;
@@ -409,8 +676,47 @@ body {
 .flag-content.right {
   padding-left: 15px;
 }
+.flag-content.right-double {
+  padding-left: 30px;
+}
 .flag-content.left {
   padding-right: 15px;
+}
+
+.top-actions {
+  position: relative;
+  display: block;
+  float: right;
+  width: 315px;
+  padding: 15px 0;
+}
+.top-actions .icon-search {
+  position: absolute;
+  right: 66px;
+  top: 17px;
+}
+.top-actions .icon-new-message {
+  margin-right: 10px;
+}
+
+.user-avatar--x-small {
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.drop-down {
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+}
+.drop-down:after {
+  position: relative;
+  display: inline-block;
+  border-top: 5px solid #4b4f54;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 0;
+  content: "";
 }
 
 .block.user-status {
