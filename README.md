@@ -3,7 +3,8 @@
 ### Instructions
 
 #### View Site
-- Cone down the repo and open up the index.html
+- Home page - index.html
+- Settings - settings.html
 
 #### Make modifications
 - In terminal navigate to the folder in which you cloned the repo to locally
