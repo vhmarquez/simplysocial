@@ -215,6 +215,10 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+body {
+  padding-top: 60px;
+}
+
 .grid {
   width: 100%;
 }
@@ -286,8 +290,10 @@ body {
 }
 
 .panel-top {
-  position: relative;
+  position: fixed;
   display: block;
+  z-index: 3;
+  top: 0;
   width: 100%;
   height: 60px;
   background: #262728;

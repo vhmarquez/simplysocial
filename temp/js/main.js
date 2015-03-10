@@ -8,9 +8,8 @@ $(document).ready(function() {
 
 	// View Switch
 	$('.view-tab').each(function(){
+		
 		var tab = $(this).attr('href');
-
-		console.log(tab);
 		
 		$(this).on('click', function(event) {
 			event.preventDefault();
@@ -23,4 +22,5 @@ $(document).ready(function() {
 		});
 
 	});
+	
 });
