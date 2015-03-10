@@ -23,10 +23,14 @@
 	width: 100%
 	padding: $bsu
 
-.user-title
+	&.comment
+		border-top: 1px solid $color-borders
+		background: $color-accent-bg
+
+.user-name
 	position: relative
 	display: block
-	margin-bottom: 10px
+	margin-bottom: 5px
 	+font(16px, 18px)
 
 .post-img
@@ -34,3 +38,9 @@
 	display: block
 	width: 100%
 	height: auto
+
+.post-time
+	position: relative
+	display: block
+	color: $color-details
+	+font(13px, 18px)

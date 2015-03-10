@@ -35,47 +35,318 @@
 					<div class="section-small padded-sides">
 						<div class="block padded user-status">
 							<input type="text" name="status" class="status" id="status" placeholder="What's on your mind?">
+							<span class="cursor"></span>
+							<a href="#" class="status-add add-photo"><span class="icon-photo"></span>Add Photo</a>
+							<a href="#" class="status-add add-video"><span class="icon-video"></span>Add Video</a>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="section-small padded-sides">
+				<ul class="content-filters">
+					<li>
+						<a href="" class="content-filter active">All Posts</a>
+					</li>
+					<li>
+						<a href="" class="content-filter">Photos</a>
+					</li>
+					<li>
+						<a href="" class="content-filter">Videos</a>
+					</li>
+				</ul>
+				<span class="layout-filter">
+					<a href="#viewList" class="view-tab"><span class="icon-list"></span></a>
+					<a href="#viewGrid" class="view-tab"><span class="icon-grid active"></span></a>
+				</span>
 			</div>
 		</div>
 
 		<!-- Panel: Content -->
 		<main class="panel-content" id="panelContent">
-			<div class="section-medium padded">
+			<div class="section-small padded view-display" id="viewList">
+				<div class="grid">
+					<div class="grid-item">
+						<div class="block">
+							<div class="block-padding">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="block">
+							<div class="block-padding">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
+							</div>
+							<img src="assets/img/post-img.jpg" alt="Post Image" class="post-img" />
+							<div class="block-padding comment">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time.</p>
+							</div>
+							<div class="block-padding comment">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="block">
+							<div class="block-padding">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="block">
+							<div class="block-padding">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
+							</div>
+							<img src="assets/img/post-img.jpg" alt="Post Image" class="post-img" />
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="block">
+							<div class="block-padding">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="block">
+							<div class="block-padding">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section-medium padded view-display active" id="viewGrid">
 				<div class="grid js-masonry" id="streamGrid">
 					<div class="grid-item desk-one-third stream-grid-item">
 						<div class="block">
 							<div class="block-padding">
-								<div class="block-header">
-									<div class="flag">
-										<div class="flag-media">
-											<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
-										</div>
-										<div class="flag-content right">
-											<span class="user-title">Jessica Tuan</span>
-											<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
-										</div>
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
 									</div>
 								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
 							</div>
 						</div>
 					</div>
 					<div class="grid-item desk-one-third stream-grid-item">
 						<div class="block">
 							<div class="block-padding">
-								<div class="block-header">
-									<div class="flag">
-										<div class="flag-media">
-											<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
-										</div>
-										<div class="flag-content right">
-											<span class="user-title">Jessica Tuan</span>
-											<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
-										</div>
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
 									</div>
 								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
+							</div>
+							<img src="assets/img/post-img.jpg" alt="Post Image" class="post-img" />
+							<div class="block-padding comment">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time.</p>
+							</div>
+							<div class="block-padding comment">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item desk-one-third stream-grid-item">
+						<div class="block">
+							<div class="block-padding">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
+							</div>
+						</div>
+					</div>
+					<div class="grid-item desk-one-third stream-grid-item">
+						<div class="block">
+							<div class="block-padding">
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
+									</div>
+								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
 							</div>
 							<img src="assets/img/post-img.jpg" alt="Post Image" class="post-img" />
 						</div>
@@ -83,69 +354,42 @@
 					<div class="grid-item desk-one-third stream-grid-item">
 						<div class="block">
 							<div class="block-padding">
-								<div class="block-header">
-									<div class="flag">
-										<div class="flag-media">
-											<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
-										</div>
-										<div class="flag-content right">
-											<span class="user-title">Jessica Tuan</span>
-											<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
-										</div>
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
 									</div>
 								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
 							</div>
 						</div>
 					</div>
 					<div class="grid-item desk-one-third stream-grid-item">
 						<div class="block">
 							<div class="block-padding">
-								<div class="block-header">
-									<div class="flag">
-										<div class="flag-media">
-											<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
-										</div>
-										<div class="flag-content right">
-											<span class="user-title">Jessica Tuan</span>
-											<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
-										</div>
+								<div class="flag">
+									<div class="flag-media">
+										<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
+									</div>
+									<div class="flag-content right">
+										<span class="user-name">Jessica Tuan</span>
+										<span class="post-time">1m</span>
+										<span class="group-icons">
+											<span class="icon-reply"></span>
+											<span class="icon-like"></span>
+											<span class="icon-more last"></span>
+										</span>
 									</div>
 								</div>
-							</div>
-							<img src="assets/img/post-img.jpg" alt="Post Image" class="post-img" />
-						</div>
-					</div>
-					<div class="grid-item desk-one-third stream-grid-item">
-						<div class="block">
-							<div class="block-padding">
-								<div class="block-header">
-									<div class="flag">
-										<div class="flag-media">
-											<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
-										</div>
-										<div class="flag-content right">
-											<span class="user-title">Jessica Tuan</span>
-											<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="grid-item desk-one-third stream-grid-item">
-						<div class="block">
-							<div class="block-padding">
-								<div class="block-header">
-									<div class="flag">
-										<div class="flag-media">
-											<img src="assets/img/user-avatar--small.png" alt="User Avatar Small" class="user-avatar--small" width="40px" height="40px">
-										</div>
-										<div class="flag-content right">
-											<span class="user-title">Jessica Tuan</span>
-											<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
-										</div>
-									</div>
-								</div>
+								<p>It's Monday. That means <a href="#">@happymonday</a> podcast time. <a href="#">http://bit.ly/1hxqkGO</a> Good stuff for web workers.</p>
 							</div>
 						</div>
 					</div>
