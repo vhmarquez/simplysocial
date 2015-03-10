@@ -173,9 +173,17 @@ h6 {
   color: #303d4f;
 }
 
+.page-title {
+  color: #3f454d;
+  font-size: 30px;
+  line-height: 30px;
+}
+
 .section-title {
-  color: #b3b6bd;
+  color: #70767f;
   text-transform: uppercase;
+  font-size: 13px;
+  line-height: 30px;
 }
 
 p {
@@ -293,10 +301,9 @@ input[type="password"]:focus {
   display: block;
   width: 100%;
   text-align: center;
-  padding: 5px;
   font-weight: 300;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 30px;
   color: #bec3cc;
   border: 1px solid #bec3cc;
   -moz-border-radius: 4px;
@@ -988,9 +995,8 @@ input[type="text"].status::-webkit-input-placeholder {
 }
 @media screen and (min-width: 841px) {
   input[type="text"].status::-webkit-input-placeholder {
-    padding-top: 12px;
     font-size: 30px;
-    line-height: 18px;
+    line-height: 40px;
   }
 }
 input[type="text"].status:-moz-placeholder {
@@ -1001,9 +1007,8 @@ input[type="text"].status:-moz-placeholder {
 }
 @media screen and (min-width: 841px) {
   input[type="text"].status:-moz-placeholder {
-    padding-top: 20px;
     font-size: 30px;
-    line-height: 18px;
+    line-height: 40px;
   }
 }
 input[type="text"].status::-moz-placeholder {
@@ -1014,9 +1019,8 @@ input[type="text"].status::-moz-placeholder {
 }
 @media screen and (min-width: 841px) {
   input[type="text"].status::-moz-placeholder {
-    padding-top: 20px;
     font-size: 30px;
-    line-height: 18px;
+    line-height: 40px;
   }
 }
 input[type="text"].status:-ms-input-placeholder {
@@ -1027,9 +1031,8 @@ input[type="text"].status:-ms-input-placeholder {
 }
 @media screen and (min-width: 841px) {
   input[type="text"].status:-ms-input-placeholder {
-    padding-top: 12px;
     font-size: 30px;
-    line-height: 18px;
+    line-height: 40px;
   }
 }
 input[type="text"].status:focus {
@@ -1147,10 +1150,10 @@ input[type="text"].status:focus {
 }
 
 .drop-down-arrow {
-  vertical-align: top;
-  display: inline-block;
   position: relative;
+  display: inline-block;
   padding-right: 20px;
+  vertical-align: top;
 }
 .drop-down-arrow:after {
   position: relative;
