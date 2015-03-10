@@ -230,8 +230,12 @@ input.switch:checked + .switch-status {
 .switch-label {
   position: relative;
   vertical-align: top;
-  top: 3px;
   color: #70767f;
+}
+@media screen and (min-width: 1226px) {
+  .switch-label {
+    top: 3px;
+  }
 }
 
 .radio-wrap {
@@ -291,8 +295,12 @@ input.radio:checked + .radio-status {
 .radio-label {
   position: relative;
   vertical-align: top;
-  top: 3px;
   color: #70767f;
+}
+@media screen and (min-width: 1226px) {
+  .radio-label {
+    top: 3px;
+  }
 }
 
 .group-icons {

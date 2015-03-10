@@ -132,8 +132,10 @@ input.switch:checked + .switch-status
 .switch-label
 	position: relative
 	vertical-align: top
-	top: 3px
 	color: $color-p
+
+	+mq(desk)
+		top: 3px
 
 // checkbox radio
 // //////////////////////////////////////////////
@@ -185,5 +187,7 @@ input.radio:checked + .radio-status
 .radio-label
 	position: relative
 	vertical-align: top
-	top: 3px
 	color: $color-p
+
+	+mq(desk)
+		top: 3px
