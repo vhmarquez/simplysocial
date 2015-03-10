@@ -20,13 +20,25 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+		<div class="modal" id="modal">
+			<div class="modal-tray">
+				<span class="icon-close" id="modalClose"></span>
+				<div class="block new-message padded">
+					<label for="new-message">Create new message</label>
+					<textarea name="new-message" id="newMessage"></textarea>
+					<a href="#" class="status-add add-photo-message"><span class="icon-photo-message"></span>Add Photo</a>
+					<a href="#" class="status-add add-video-message"><span class="icon-video-message"></span>Add Video</a>
+					<button class="submit">Post</button>
+				</div>
+			</div>
+		</div>
 
 		<!-- Panel: Top -->
 		<div class="panel-top" id="panelTop">
 			<div class="section-large">
 				<a href="./index.html" class="logo">simply<span class="accent">social</span></a>
 				<div class="top-actions">
-					<span class="icon-new-message"></span>
+					<span class="icon-new-message" id="modalOpen"></span>
 					<input type="text" class="search" />
 					<span class="icon-search"></span>
 					<img src="assets/img/user-avatar--small.png" alt="User Avatar Picture" class="user-avatar--x-small" width="30" height="30" />
@@ -395,7 +407,6 @@
 		<script>window.jQuery || document.write('<script src="architecture/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
 		<!-- Plugins -->
-		<script src="architecture/js/plugins/Tocca.min.js"></script>
 		<script src="architecture/js/vendor/masonry.pkgd.min.js"></script>
 
 		<!-- Custom -->

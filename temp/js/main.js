@@ -11,8 +11,8 @@ $(document).ready(function() {
 		
 		var tab = $(this).attr('href');
 		
-		$(this).on('click', function(event) {
-			event.preventDefault();
+		$(this).on('click', function(events) {
+			events.preventDefault();
 
 			$('.view-tab .icon-list, .view-tab .icon-grid').removeClass('active');
 			$(this).children('.icon-list, .icon-grid').addClass('active');
@@ -22,5 +22,15 @@ $(document).ready(function() {
 		});
 
 	});
-	
+
+	// Modal
+	$('#modalOpen').on('click', function(event) {
+		event.preventDefault();
+		$('.modal').addClass('active');
+	});
+
+	$('#modalClose').on('click', function(event) {
+		event.preventDefault();
+		$('.modal').removeClass('active');
+	});
 });

@@ -46,6 +46,18 @@ label[class*="icon-"]
 	.icon-photo
 		+sprite(48px, 48px, -0.25, -1.25)
 
+.icon-photo-message
+	top: 6px
+	+sprite(48px, 48px, -10.25, -0.25)
+
+.add-photo-message
+	color: $color-p
+	+hover
+		color: $color-active
+
+		.icon-photo-message
+			+sprite(48px, 48px, -10.25, -1.25)
+
 // video
 // //////////////////////////////////////////////
 
@@ -57,6 +69,18 @@ label[class*="icon-"]
 	.icon-video
 		+sprite(48px, 48px, -1.25, -1.25)
 
+.icon-video-message
+	top: 6px
+	+sprite(48px, 48px, -11.25, -0.25)
+
+.add-video-message
+	color: $color-p
+
+	+hover
+		color: $color-active
+		.icon-video-message
+			+sprite(48px, 48px, -11.25, -1.25)
+
 // reply
 // //////////////////////////////////////////////
 
@@ -66,17 +90,26 @@ label[class*="icon-"]
 	+hover
 		+sprite(48px, 48px, -4.25, -1.25)
 
+// like
+// //////////////////////////////////////////////
+
 .icon-like
 	+sprite(48px, 48px, -5.25, -0.25)
 
 	+hover
 		+sprite(48px, 48px, -5.25, -1.25)
 
+// more
+// //////////////////////////////////////////////
+
 .icon-more
 	+sprite(48px, 48px, -6.25, -0.25)
 
 	+hover
 		+sprite(48px, 48px, -6.25, -1.25)
+
+// list
+// //////////////////////////////////////////////
 
 .icon-list
 	margin-right: 0
@@ -88,6 +121,9 @@ label[class*="icon-"]
 	&.active
 		+sprite(48px, 48px, -2.25, -1.25)
 
+// grid
+// //////////////////////////////////////////////
+
 .icon-grid
 	+sprite(48px, 48px, -3.25, -0.25)
 
@@ -97,6 +133,9 @@ label[class*="icon-"]
 	&.active
 		+sprite(48px, 48px, -3.25, -1.25)
 
+// search
+// //////////////////////////////////////////////
+
 .icon-search
 	+sprite(48px, 48px, -7.25, -0.25)
 
@@ -105,6 +144,9 @@ label[class*="icon-"]
 
 	&.active
 		+sprite(48px, 48px, -7.25, -1.25)
+
+// message
+// //////////////////////////////////////////////
 
 .icon-new-message
 	width: 31px !important
@@ -120,3 +162,12 @@ label[class*="icon-"]
 	&.active
 		+sprite(48px, 48px, -8.25, -1.25)
 		background-position: -392px -59px
+
+// close
+// //////////////////////////////////////////////
+
+.icon-close
+	+sprite(48px, 48px, -9.25, -0.25)
+
+	+hover
+		+sprite(48px, 48px, -9.25, -1.25)
