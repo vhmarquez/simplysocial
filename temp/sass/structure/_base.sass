@@ -150,26 +150,45 @@ body
 	width: 100%
 	min-height: 100%
 	top: 0
-	z-index: 999
+	z-index: -1
 	background: rgba(#000, .5)
+	+transition(all .3s ease-in-out)
 
 	&.active
 		display: block
+		z-index: 995
+		+animation(fade-in .2s ease-in-out 1)
+		+transition(all .3s ease-in-out)
 
-.modal-tray
+.modal-block
 	position: absolute
-	display: block
+	display: none
+	z-index: -1
 	width: 100%
 	max-width: 626px
-	top: 50%
-	left: 50%
-	margin-left: -313px
-	margin-top: -140px
-	padding-top: 25px
+	top: 90px
+	left: 0
+	padding: 25px 25px 0 25px
+	margin: 0
+	+transition(all .3s ease-in-out)
 
+	+mq(lap)
+		top: 160px
+		left: 50%
+		margin: 0 0 0 -313px
 
 	.icon-close
 		position: absolute
-		right: -30px
-		top: 0
+		right: 25px
+		top: -5px
 		margin: 0
+
+		+mq(lap)
+			right: 0
+			top: 0
+
+	&.active
+		display: block
+		z-index: 997
+		+animation(slide-in .4s ease-in-out 1)
+		+transition(all .3s ease-in-out)

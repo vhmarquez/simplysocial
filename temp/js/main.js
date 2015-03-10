@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+	// Navigation
+	$('.drop-down-trigger').on('click', function(event) {
+		event.preventDefault();
+		$('.drop-down').toggleClass('active');
+	});
+
+	$('.panel-hero').on('click', function(event) {
+		event.preventDefault();
+		
+		$('.drop-down').removeClass('active');
+
+	});
+
 	// Masonry Grid View
 	var	container = $('#streamGrid');
 	var	msnry = new Masonry( container[0], {
@@ -26,11 +39,12 @@ $(document).ready(function() {
 	// Modal
 	$('#modalOpen').on('click', function(event) {
 		event.preventDefault();
-		$('.modal').addClass('active');
+		$('.modal, .modal-block').addClass('active');
 	});
 
-	$('#modalClose').on('click', function(event) {
+	$('#modalClose, #modal').on('click', function(event) {
 		event.preventDefault();
-		$('.modal').removeClass('active');
+		$('.modal, .modal-block').removeClass('active');
 	});
+
 });

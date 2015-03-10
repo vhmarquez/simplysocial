@@ -59,12 +59,19 @@ input[type="password"]
 	width: 100%
 	position: relative
 	display: inline-block
-	padding: 3px 3px 3px 3px
+	padding: 0 3px
 	background: transparent
 	+border-radius(4px)
 
 	&:last-child
 		margin-bottom: 0
+
+	&:focus
+		color: $color-active !important
+		border: 1px solid $color-active !important
+		outline: 0
+
+
 
 // panel content input fields
 
@@ -76,6 +83,7 @@ input[type="password"]
 		color: $color-p
 		margin-bottom: 15px
 		max-width: 360px
+		+font(16px, 30px)
 
 
 // change avatar
@@ -115,29 +123,35 @@ input[type="password"]
 	+hover
 		right: 49px
 
-input.switch:checked + .switch-status
-	left: 41px
+input.switch:checked + .switch-toggle
+	background: $light-green
+
+	&:after
+		+transform(translateX(25px))
 
 .switch-toggle
 	position: absolute
 	display: block
-	width: 60px
-	height: 30px
+	top: 0
+	width: 50px
+	height: 25px
 	margin: 0 10px
 	+border-radius(50em)
-	background: $light-green
+	background: $grey
 	z-index: 1
 
-.switch-status
-	position: absolute
-	display: block
-	height: 28px
-	width: 28px
-	+border-radius(50em)
-	background: #fff
-	z-index: 2
-	left: 11px
-	top: 1px
+	&:after
+		position: absolute
+		display: block
+		height: 23px
+		width: 23px
+		+border-radius(50em)
+		background: #fff
+		z-index: 2
+		left: 1px
+		top: 1px
+		+transition(all .15s linear)
+		content: ''
 
 .switch-label
 	position: relative
@@ -169,30 +183,35 @@ input.switch:checked + .switch-status
 	+hover
 		right: 49px
 
-input.radio:checked + .radio-status
-	display: block
+input.radio:checked + .radio-toggle
+	&:after
+		+opacity(1)
 
 .radio-toggle
 	position: absolute
 	display: block
-	width: 30px
-	height: 30px
+	top: 0
+	width: 23px
+	height: 23px
 	margin: 0 10px
 	+border-radius(50em)
 	background: #fff
 	border: 1px solid $color-borders
 	z-index: 1
 
-.radio-status
-	position: absolute
-	display: none
-	height: 22px
-	width: 22px
-	+border-radius(50em)
-	background: $light-green
-	z-index: 2
-	left: 14px
-	top: 4px
+	&:after
+		position: absolute
+		display: block
+		+opacity(0)
+		height: 15px
+		width: 15px
+		+border-radius(50em)
+		background: $light-green
+		z-index: 2
+		left: 3px
+		top: 3px
+		+transition(opacity .15s ease-in-out)
+		content: ''
 
 .radio-label
 	position: relative
