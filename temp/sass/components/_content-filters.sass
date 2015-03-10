@@ -44,6 +44,8 @@
 
 .view-display
 	display: none
+	+transition(all .4s ease-in-out)
 
 	&.active
 		display: block
+		+animation(slide-in-subtle .4s linear)

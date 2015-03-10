@@ -796,6 +796,9 @@ body {
   display: block;
   width: 100%;
   padding: 25px 0 85px 0;
+  -moz-animation: slide-in-subtle 0.4s linear 1;
+  -webkit-animation: slide-in-subtle 0.4s linear 1;
+  animation: slide-in-subtle 0.4s linear 1;
 }
 
 .section-small {
@@ -985,6 +988,7 @@ input[type="text"].status::-webkit-input-placeholder {
 }
 @media screen and (min-width: 841px) {
   input[type="text"].status::-webkit-input-placeholder {
+    padding-top: 12px;
     font-size: 30px;
     line-height: 18px;
   }
@@ -995,17 +999,35 @@ input[type="text"].status:-moz-placeholder {
   font-size: 16px;
   line-height: 30px;
 }
+@media screen and (min-width: 841px) {
+  input[type="text"].status:-moz-placeholder {
+    font-size: 30px;
+    line-height: 18px;
+  }
+}
 input[type="text"].status::-moz-placeholder {
   padding-top: 0;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   line-height: 30px;
 }
+@media screen and (min-width: 841px) {
+  input[type="text"].status::-moz-placeholder {
+    font-size: 30px;
+    line-height: 18px;
+  }
+}
 input[type="text"].status:-ms-input-placeholder {
   padding-top: 0;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   line-height: 30px;
+}
+@media screen and (min-width: 841px) {
+  input[type="text"].status:-ms-input-placeholder {
+    font-size: 30px;
+    line-height: 18px;
+  }
 }
 input[type="text"].status:focus {
   color: white !important;
@@ -1256,7 +1278,14 @@ input[type="text"].status:focus {
 
 .view-display {
   display: none;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .view-display.active {
   display: block;
+  -moz-animation: slide-in-subtle 0.4s linear;
+  -webkit-animation: slide-in-subtle 0.4s linear;
+  animation: slide-in-subtle 0.4s linear;
 }
