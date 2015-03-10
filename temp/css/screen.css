@@ -964,27 +964,48 @@ input[type="text"].status {
   width: 100%;
   margin-bottom: 20px;
   border: 0;
+  font-size: 16px;
+  line-height: 30px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 30px;
-  line-height: 18px;
   color: rgba(255, 255, 255, 0.5);
   background: transparent;
 }
+@media screen and (min-width: 841px) {
+  input[type="text"].status {
+    font-size: 30px;
+    line-height: 18px;
+  }
+}
 input[type="text"].status::-webkit-input-placeholder {
-  padding-top: 12px;
+  padding-top: 0;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 30px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 30px;
+}
+@media screen and (min-width: 841px) {
+  input[type="text"].status::-webkit-input-placeholder {
+    font-size: 30px;
+    line-height: 18px;
+  }
 }
 input[type="text"].status:-moz-placeholder {
+  padding-top: 0;
   color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  line-height: 30px;
 }
 input[type="text"].status::-moz-placeholder {
+  padding-top: 0;
   color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  line-height: 30px;
 }
 input[type="text"].status:-ms-input-placeholder {
+  padding-top: 0;
   color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  line-height: 30px;
 }
 input[type="text"].status:focus {
   color: white !important;
