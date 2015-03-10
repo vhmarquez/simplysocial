@@ -676,13 +676,13 @@ body {
 }
 @media screen and (min-width: 1226px) {
   .top-actions {
-    width: 315px;
+    width: 335px;
   }
 }
 .top-actions .icon-search {
   position: absolute;
   display: none;
-  right: 66px;
+  right: 86px;
   top: 17px;
 }
 @media screen and (min-width: 1226px) {
