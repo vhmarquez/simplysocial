@@ -1001,7 +1001,6 @@ input[type="text"].status:-moz-placeholder {
 }
 @media screen and (min-width: 841px) {
   input[type="text"].status:-moz-placeholder {
-    padding-top: 12px;
     font-size: 30px;
     line-height: 18px;
   }
@@ -1014,7 +1013,6 @@ input[type="text"].status::-moz-placeholder {
 }
 @media screen and (min-width: 841px) {
   input[type="text"].status::-moz-placeholder {
-    padding-top: 12px;
     font-size: 30px;
     line-height: 18px;
   }
