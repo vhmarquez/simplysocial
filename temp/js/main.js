@@ -8,16 +8,11 @@ $(document).ready(function() {
 
 	$('.panel-hero').on('click', function(event) {
 		event.preventDefault();
-		
 		$('.drop-down').removeClass('active');
 
 	});
 
 	// Typed Effect
-	$('.typed-status').typed({
-		strings: ["What's on your mind?"],
-		typeSpeed: 100
-	});
 
 	$('#status').focus(function(event) {
 		$('.typed-wrapper').css('display', 'none');
@@ -30,12 +25,6 @@ $(document).ready(function() {
 		} else {
 			$('.typed-wrapper').css('display', 'none');
 		}
-	});
-
-	// Masonry Grid View
-	var	container = $('#streamGrid');
-	var	msnry = new Masonry( container[0], {
-		itemSelector: '.stream-grid-item'
 	});
 
 	// View Switch
