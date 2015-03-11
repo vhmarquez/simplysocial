@@ -13,6 +13,25 @@ $(document).ready(function() {
 
 	});
 
+	// Typed Effect
+	$('.typed-status').typed({
+		strings: ["What's on your mind?"],
+		typeSpeed: 100
+	});
+
+	$('#status').focus(function(event) {
+		$('.typed-wrapper').css('display', 'none');
+	});
+
+	$('#status').focusout(function(event) {
+		/* Act on the event */
+		if( !$(this).val() ) {
+			$('.typed-wrapper').css('display', 'block');
+		} else {
+			$('.typed-wrapper').css('display', 'none');
+		}
+	});
+
 	// Masonry Grid View
 	var	container = $('#streamGrid');
 	var	msnry = new Masonry( container[0], {

@@ -4,6 +4,8 @@
 
 +keyframes(blink)
 	0%
-		background: transparent
+		+opacity(1)
 	50%
-		background: #fff
+		+opacity(0)
+	100%
+		+opacity(1)
